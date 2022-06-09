@@ -35,6 +35,10 @@ body {
 
 }
 
+.conteudo {
+    margin: 123px 0;
+}
+
 .titulo {
    
     width: 414px;
@@ -47,56 +51,52 @@ body {
     font-weight: 400;
 
 }
-.titulo1 {
-    margin-top: 123px ;
-    width: 414px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    padding-left: 20px;
-    font-family: 'Righteous', cursive;
-    font-size: 26px;
-    font-weight: 400;
 
-}
 
 .pratos {
     display: flex;
-    background-color: beige;
     width: 410px;
     height: 216px;
-    overflow: scroll;
+    overflow-x: scroll;
     justify-content: space-between;
     box-sizing: border-box;
     margin-bottom: 15px;
     
 }
 
+.pratos div:focus {
+    background-color: green;
+}
+
 .prato {
     background-color: #FFFFFF;
     border-radius: 9px;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
-    width: 172px;
+    width: 174px;
     height: 216px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 15px;
-    box-sizing: border-box;
+    margin: 0 8px;
+    padding: 0 10px;
+   
 }
 
-.prato p, h3 {
+.prato:hover {
+    cursor: pointer;
+}
+
+.texto {
     font-size: 16px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
     color: #333333;
     line-height: 19px;
-    margin: 5px 0px;
-    
+    margin-top: 10px;
 }
 
-.prato h2 {
+.prato span {
     font-size: 15px;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
@@ -147,3 +147,4 @@ body {
 .fechar-pedido button:hover {
     cursor: pointer;
 }
+
