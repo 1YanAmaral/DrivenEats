@@ -148,3 +148,10 @@ body {
     cursor: pointer;
 }
 
+.selecionado {
+    border: 5px solid #32b72f;
+}
+
+.pedido-fechado {
+    background-color: #32b72f;
+}
