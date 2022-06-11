@@ -94,6 +94,7 @@ body {
     color: #333333;
     line-height: 19px;
     margin-top: 10px;
+    
 }
 
 .prato span {
@@ -142,7 +143,7 @@ body {
     font-size: 20px;
     color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
-        
+            
 }
 .fechar-pedido button:hover {
     cursor: pointer;
@@ -150,8 +151,14 @@ body {
 
 .selecionado {
     border: 5px solid #32b72f;
+    
 }
 
-.pedido-fechado {
-    background-color: #32b72f;
+.hidden {
+    display: none;
+}
+
+.check {
+    color: #32b72f;
+    
 }
