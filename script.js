@@ -39,5 +39,26 @@ function mudaBotao(){
     if(prato && bebida && sobremesa){
        botao.style.backgroundColor = "#32b72f";
        botao.innerHTML = "Fechar pedido";
+       
     }
 }
+
+function mostraIcone(elemento) {
+    let icone = elemento.querySelector('.pratos .check');
+    let aux = document.querySelector('.pratos .show');
+    console.log(aux);
+    console.log(icone);
+    if(aux !== null){
+        aux.classList.remove("show");
+    }
+    icone.classList.add("show");
+   
+}
+
+/*function fecharPedido() {
+    let msg = `Olá, gostaria de fazer o pedido:
+    - Prato: ${nomePrato}
+    - Bebida: ${nomeBebida}
+    - Sobremesa: ${nomeSobremesa}
+    Total: R$ ${total}`
+}*/

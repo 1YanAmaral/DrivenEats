@@ -55,8 +55,9 @@ body {
 
 .pratos {
     display: flex;
+    
     width: 410px;
-    height: 216px;
+    
     overflow-x: scroll;
     justify-content: space-between;
     box-sizing: border-box;
@@ -74,12 +75,10 @@ body {
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     width: 174px;
     height: 216px;
-    display: flex;
-    flex-direction: column;
+    display: block;
     justify-content: center;
-    align-items: center;
     margin: 0 8px;
-    padding: 0 10px;
+    padding: 10px 10px;
    
 }
 
@@ -87,7 +86,7 @@ body {
     cursor: pointer;
 }
 
-.texto {
+.nomePrato {
     font-size: 16px;
     font-weight: 700;
     font-family: 'Roboto', sans-serif;
@@ -97,7 +96,7 @@ body {
     
 }
 
-.prato span {
+.descricao {
     font-size: 15px;
     font-weight: 300;
     font-family: 'Roboto', sans-serif;
@@ -107,18 +106,30 @@ body {
     
 }
 
-.prato img {
+.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 30px;
+}
+
+.preco {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    line-height: 19px;
+    margin-top: 10px;
+    
+}
+
+.imgPrato {
     height: 87px;
     width: 144px;
     
 }
 
-.prato div {
-    display: flex;
-    flex-direction: column;
-    width: 144px;
-
-}
 
 .fechar-pedido {
     width: 414px;
@@ -154,11 +165,15 @@ body {
     
 }
 
-.hidden {
-    display: none;
-}
 
 .check {
     color: #32b72f;
-    
+    margin-top: 8px;
+    height: 15px;
+    width: 15px;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
 }

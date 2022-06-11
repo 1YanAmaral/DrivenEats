@@ -21,103 +21,171 @@
         <p>Primeiro, seu prato</p>
     </div>
     <div class="pratos">
-        <div class="prato" onclick="selecionarPrato(this)">
-            <img src="img/frango_yin_yang 1.png" alt="franguinho">
-                <div class="texto">
+        <div class="prato" onclick="selecionarPrato(this); mostraIcone(this)">
+            <img class="imgPrato"src="img/frango_yin_yang 1.png" alt="franguinho">
+                <div class="nomePrato">
                     Frango Yin Yang
+                </div>    
+                <div class="descricao">
                     <span>Um pouco de batata, um pouco de salada</span>
-                    R$ 14,90  
-                    <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>         
-                </div>           
-        </div>
-        <div class="prato" onclick="selecionarPrato(this)">
+                </div>
+                <div class="rodape"> 
+                    <div class="preco">   
+                        <p>R$ <span class="valor">14.90</span></p>                      
+                    </div>  
+                    <img class="check" src="img/checkmark-circle 1.png" alt="">       
+                </div>                      
+                
+        </div> 
+        <div class="prato" onclick="selecionarPrato(this); mostraIcone(this)">
             <img src="img/frango_yin_yang 1.png" alt="franguinho">
-                <div class="texto">
+                <div class="nomePrato">
                     Frango Yin Yang
+                </div>    
+                <div class="descricao">
                     <span>Um pouco de batata, um pouco de salada</span>
-                    R$ 19,90
-                    <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>           
-                </div>           
-        </div>
-        <div class="prato" onclick="selecionarPrato(this)">
+                </div>
+                <div class="rodape"> 
+                    <div class="preco">   
+                        <p>R$ <span class="valor">19.90</span></p>                      
+                    </div>  
+                <img class="check" src="img/checkmark-circle 1.png" alt="">      
+                </div>                      
+                
+        </div> 
+
+        <div class="prato" onclick="selecionarPrato(this); mostraIcone(this)">
             <img src="img/frango_yin_yang 1.png" alt="franguinho">
-                <div class="texto">
+                <div class="nomePrato">
                     Frango Yin Yang
+                </div>    
+                <div class="descricao">
                     <span>Um pouco de batata, um pouco de salada</span>
-                    R$ 24,90  
-                    <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>         
-                </div>           
-        </div>
-    </div>
+                </div>
+                <div class="rodape"> 
+                    <div class="preco">   
+                        <p>R$ <span class="valor">24.90</span></p>                      
+                    </div>  
+               <img class="check" src="img/checkmark-circle 1.png" alt="">        
+                </div>                      
+                
+        </div> 
+        
+    </div>        
+    
     <div class="titulo">
         <p>Agora, sua bebida</p>
     </div>
     <div class="pratos bebidas">
-        <div class="prato" onclick="selecionarBebida(this)">
+        <div class="prato" onclick="selecionarBebida(this); mostraIcone(this)">
             <img src="img/coquinha_gelada 1.png" alt="coquinha">
-                <div class="texto">
+                <div class="nomePrato">
                     Coquinha gelada
+                </div>    
+                <div class="descricao">
                     <span>Lata 350ml</span>
-                    R$ 4,90 
-                    <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>          
-                </div>           
-        </div>
-        <div class="prato" onclick="selecionarBebida(this)">
+                </div>
+                <div class="rodape"> 
+                    <div class="preco">   
+                        <p>R$ <span class="valor">5.50</span></p>                      
+                    </div>  
+               <img class="check" src="img/checkmark-circle 1.png" alt="">        
+                </div>                      
+                
+        </div> 
+        <div class="prato" onclick="selecionarBebida(this); mostraIcone(this)">
             <img src="img/coquinha_gelada 1.png" alt="coquinha">
-                <div class="texto">
+                <div class="nomePrato">
                     Coquinha gelada
+                </div>    
+                <div class="descricao">
                     <span>Lata 350ml</span>
-                    R$ 8,90 
-                    <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>          
-                </div>           
-        </div>
-        <div class="prato" onclick="selecionarBebida(this)">
+                </div>
+                <div class="rodape"> 
+                    <div class="preco">   
+                        <p>R$ <span class="valor">8.50</span></p>                      
+                    </div>  
+               <img class="check" src="img/checkmark-circle 1.png" alt="">        
+                </div>                      
+                
+        </div> 
+        <div class="prato" onclick="selecionarBebida(this); mostraIcone(this)">
             <img src="img/coquinha_gelada 1.png" alt="coquinha">
-                <div class="texto">
+                <div class="nomePrato">
                     Coquinha gelada
+                </div>    
+                <div class="descricao">
                     <span>Lata 350ml</span>
-                    R$ 12,90 
-                    <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>          
-                </div>           
-        </div>
+                </div>
+                <div class="rodape"> 
+                    <div class="preco">   
+                        <p>R$ <span class="valor">12.50</span></p>                      
+                    </div>  
+               <img class="check" src="img/checkmark-circle 1.png" alt="">        
+                </div>                      
+                
+        </div> 
     </div>
     <div class="titulo">
         <p>Por fim, sua sobremesa</p>
     </div>
     <div class="pratos sobremesas">
-        <div class="prato" onclick="selecionarSobremesa(this)">
+        <div class="prato" onclick="selecionarSobremesa(this); mostraIcone(this)">
             <img src="img/pudim 1.png" alt="pudim">
-                <div class="texto">
+                <div class="nomePrato">
                     Pudim
+                </div>    
+                <div class="descricao">
                     <span>Apenas pudim</span>
-                    R$ 7,90  
-                    <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>         
-                </div>           
-        </div>
-        <div class="prato" onclick="selecionarSobremesa(this)">
+                </div>
+                <div class="rodape"> 
+                    <div class="preco">   
+                        <p>R$ <span class="valor">3.50</span></p>                      
+                    </div>  
+               <img class="check" src="img/checkmark-circle 1.png" alt="">        
+                </div>                      
+                
+        </div> 
+        <div class="prato" onclick="selecionarSobremesa(this); mostraIcone(this)">
             <img src="img/pudim 1.png" alt="pudim">
-                <div class="texto">
+                <div class="nomePrato">
                     Pudim
+                </div>    
+                <div class="descricao">
                     <span>Apenas pudim</span>
-                    R$ 10,90    
-                    <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>       
-                </div>           
-        </div>
-        <div class="prato" onclick="selecionarSobremesa(this)">
+                </div>
+                <div class="rodape"> 
+                    <div class="preco">   
+                        <p>R$ <span class="valor">5.50</span></p>                      
+                    </div>  
+               <img class="check" src="img/checkmark-circle 1.png" alt="">        
+                </div>                      
+                
+        </div> 
+        <div class="prato" onclick="selecionarSobremesa(this); mostraIcone(this)">
             <img src="img/pudim 1.png" alt="pudim">
-                <div class="texto">
+                <div class="nomePrato">
                     Pudim
+                </div>    
+                <div class="descricao">
                     <span>Apenas pudim</span>
-                    R$ 14,90   
-                    <ion-icon class="check hidden" name="checkmark-circle"></ion-icon>        
-                </div>           
-        </div>
+                </div>
+                <div class="rodape"> 
+                    <div class="preco">   
+                        <p>R$ <span class="valor">9.50</span></p>                      
+                    </div>  
+               <img class="check" src="img/checkmark-circle 1.png" alt="">        
+                </div>                      
+                
+        </div> 
     </div>
+</div>
+</div>
     <div class="fechar-pedido">
         <button onclick="fecharPedido()">Selecione os 3 itens para fechar o pedido</button>
     </div>
     </div>
     <script src="./script.js"></script>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    
 </body>
 </html>
