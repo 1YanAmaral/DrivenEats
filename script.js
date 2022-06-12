@@ -87,6 +87,8 @@ function mudaBotao(){
 
 function fecharPedido() {
     if(valorPrato && valorBebida && valorSobremesa){
+    let nome = prompt("Qual é o seu nome?");
+    let endereco = prompt("Qual é o seu endereço?");    
     total = valorPrato + valorBebida + valorSobremesa;
     total = total.toFixed(2);
     let msg = 
@@ -94,7 +96,10 @@ function fecharPedido() {
 - Prato: ${prato}
 - Bebida: ${bebida}
 - Sobremesa: ${sobremesa}
-Total: R$ ${total}`;
+Total: R$ ${total}
+
+Nome: ${nome}
+Endereço: ${endereco}`;
     let encoded = encodeURIComponent(msg);
     window.open(`https://wa.me/5521973174494?text=${encoded}`);
 }
