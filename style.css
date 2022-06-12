@@ -3,12 +3,12 @@
 }
 
 body {
-    width: 600px;
+    width: 100%;
     background-color: #e5e5e5;
 }
 
 .topo {
-    width: 414px;
+    width: 100%;
     height: 92px;
     background-color: #CF2B2B;
     font-family: 'Righteous', cursive;
@@ -56,7 +56,7 @@ body {
 .pratos {
     display: flex;
     
-    width: 410px;
+    width: 100%;
     
     overflow-x: scroll;
     justify-content: space-between;
@@ -127,12 +127,12 @@ body {
 .imgPrato {
     height: 87px;
     width: 144px;
-    
+    border-radius: 4px;
 }
 
 
 .fechar-pedido {
-    width: 414px;
+    width: 100%;
     height: 92px;
     background-color: #ffffff;
     display: flex;

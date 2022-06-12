@@ -1,9 +1,9 @@
 let prato; 
 let bebida; 
 let sobremesa;
-let valorPrato = 0;
-let valorBebida = 0;
-let valorSobremesa = 0;
+let valorPrato;
+let valorBebida;
+let valorSobremesa;
 let total = 0; 
 
 function selecionarPrato(elemento) {
@@ -86,13 +86,16 @@ function mudaBotao(){
 
 
 function fecharPedido() {
+    if(valorPrato && valorBebida && valorSobremesa){
     total = valorPrato + valorBebida + valorSobremesa;
     total = total.toFixed(2);
-    let msg = `Olá, gostaria de fazer o pedido:
-    - Prato: ${prato}
-    - Bebida: ${bebida}
-    - Sobremesa: ${sobremesa}
-    Total: R$ ${total}`;
+    let msg = 
+    `Olá, gostaria de fazer o pedido:
+- Prato: ${prato}
+- Bebida: ${bebida}
+- Sobremesa: ${sobremesa}
+Total: R$ ${total}`;
     let encoded = encodeURIComponent(msg);
     window.open(`https://wa.me/5521973174494?text=${encoded}`);
+}
 }
